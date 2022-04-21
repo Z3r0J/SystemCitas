@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    class Pacientes
+    public class Pacientes
     {
+        public int IdPacientes { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Direccion { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public string NumeroDeTelefono { get; set; }
+        public string Cedula { get; set; }
+        public DateTime FechaIngreso { get; set; }
     }
 }
