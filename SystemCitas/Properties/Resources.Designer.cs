@@ -63,6 +63,26 @@ namespace SystemCitas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cold_high_sick_fever_temperature_icon_140213 {
+            get {
+                object obj = ResourceManager.GetObject("cold_high_sick_fever_temperature_icon_140213", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap crowd_patient_patients_icon_140474 {
+            get {
+                object obj = ResourceManager.GetObject("crowd_patient_patients_icon_140474", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doctor_128_44166 {
             get {
                 object obj = ResourceManager.GetObject("doctor_128_44166", resourceCulture);
@@ -93,6 +113,16 @@ namespace SystemCitas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fever_icon_140486 {
+            get {
+                object obj = ResourceManager.GetObject("fever_icon_140486", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hospital_health_clinic_building_medical_health_icon_140666 {
             get {
                 object obj = ResourceManager.GetObject("hospital_health_clinic_building_medical_health_icon_140666", resourceCulture);
@@ -102,6 +132,16 @@ namespace SystemCitas.Properties {
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hospital_health_clinic_building_medical_health_icon_1406661 {
+            get {
+                object obj = ResourceManager.GetObject("hospital_health_clinic_building_medical_health_icon_1406661", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap male_user_add_25347 {
             get {
@@ -146,6 +186,16 @@ namespace SystemCitas.Properties {
         internal static System.Drawing.Bitmap medical_59_icon_icons_com_73933 {
             get {
                 object obj = ResourceManager.GetObject("medical-59_icon-icons.com_73933", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medicine_icon_icons_com_54386 {
+            get {
+                object obj = ResourceManager.GetObject("medicine_icon-icons.com_54386", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
