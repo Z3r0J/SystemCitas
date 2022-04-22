@@ -7,6 +7,13 @@ on p.IdPacientes =  c.IdPacientes inner join Doctor d
 on d.IdDoctor = c.IdDoctor where c.Estado = 'I'
 end
 
+create Procedure SP_BuscarCitas
+@IdCitas int
+as
+begin
+Select c.IdCitas,p.Nombre as 'Paciente', d.Nombre as 'Doctor', c.Estado, c.FechaCitas from Citas c inner join Pacientes p on p.IdPacientes =  c.IdPacientes inner join Doctor d on d.IdDoctor = c.IdDoctor where c.Estado = 'I' and IdCitas=@IdCitas
+end
+
 
 /*Procedure de Listar Citas Completadas*/
 create Procedure SP_Listar_Citas_Completadas

@@ -74,7 +74,7 @@
             this.lbHora.BackColor = System.Drawing.Color.White;
             this.lbHora.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbHora.Location = new System.Drawing.Point(27, 506);
+            this.lbHora.Location = new System.Drawing.Point(27, 433);
             this.lbHora.Name = "lbHora";
             this.lbHora.Size = new System.Drawing.Size(37, 17);
             this.lbHora.TabIndex = 9;
@@ -86,7 +86,7 @@
             this.lbFecha.BackColor = System.Drawing.Color.White;
             this.lbFecha.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbFecha.Location = new System.Drawing.Point(100, 506);
+            this.lbFecha.Location = new System.Drawing.Point(100, 433);
             this.lbFecha.Name = "lbFecha";
             this.lbFecha.Size = new System.Drawing.Size(43, 17);
             this.lbFecha.TabIndex = 8;
@@ -115,11 +115,12 @@
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Location = new System.Drawing.Point(311, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 524);
+            this.panel1.Size = new System.Drawing.Size(394, 447);
             this.panel1.TabIndex = 7;
             // 
             // txtTelefono
             // 
+            this.txtTelefono.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTelefono.Location = new System.Drawing.Point(160, 214);
             this.txtTelefono.Mask = "(999) 000-0000";
             this.txtTelefono.Name = "txtTelefono";
@@ -136,6 +137,7 @@
             // 
             // txtCedula
             // 
+            this.txtCedula.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtCedula.Location = new System.Drawing.Point(160, 167);
             this.txtCedula.Mask = "000-0000000-0";
             this.txtCedula.Name = "txtCedula";
@@ -290,7 +292,7 @@
             this.pictureBox1.Image = global::SystemCitas.Properties.Resources.crowd_patient_patients_icon_140474;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(293, 524);
+            this.pictureBox1.Size = new System.Drawing.Size(293, 447);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -300,7 +302,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(717, 548);
+            this.ClientSize = new System.Drawing.Size(717, 471);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbHora);

@@ -43,7 +43,8 @@ namespace SystemCitas
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            DatosCompletados citas = new();
+            citas.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

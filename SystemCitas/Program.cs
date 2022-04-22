@@ -17,7 +17,7 @@ namespace SystemCitas
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataPaciente());
+            Application.Run(new FrmLogin());
         }
     }
 }

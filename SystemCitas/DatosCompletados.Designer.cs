@@ -1,6 +1,6 @@
 ﻿namespace SystemCitas
 {
-    partial class DatosCitas
+    partial class DatosCompletados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosCitas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosCompletados));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtBuscarDoctor = new System.Windows.Forms.TextBox();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnCompletar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataPacientes = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,12 +45,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.txtBuscarDoctor);
             this.panel1.Controls.Add(this.btnCerrar);
-            this.panel1.Controls.Add(this.btnCompletar);
-            this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.dataPacientes);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -62,18 +54,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(701, 496);
             this.panel1.TabIndex = 3;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(585, 133);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(57, 25);
-            this.btnBuscar.TabIndex = 15;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // pictureBox3
             // 
@@ -85,48 +65,17 @@
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
-            // txtBuscarDoctor
-            // 
-            this.txtBuscarDoctor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBuscarDoctor.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtBuscarDoctor.Location = new System.Drawing.Point(648, 133);
-            this.txtBuscarDoctor.Name = "txtBuscarDoctor";
-            this.txtBuscarDoctor.Size = new System.Drawing.Size(26, 25);
-            this.txtBuscarDoctor.TabIndex = 12;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCerrar.Location = new System.Drawing.Point(585, 431);
+            this.btnCerrar.Location = new System.Drawing.Point(569, 258);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(89, 38);
+            this.btnCerrar.Size = new System.Drawing.Size(129, 53);
             this.btnCerrar.TabIndex = 11;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // btnCompletar
-            // 
-            this.btnCompletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompletar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCompletar.Location = new System.Drawing.Point(585, 323);
-            this.btnCompletar.Name = "btnCompletar";
-            this.btnCompletar.Size = new System.Drawing.Size(89, 40);
-            this.btnCompletar.TabIndex = 9;
-            this.btnCompletar.Text = "Completar Citas";
-            this.btnCompletar.UseVisualStyleBackColor = true;
-            this.btnCompletar.Click += new System.EventHandler(this.btnCompletar_Click);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregar.Location = new System.Drawing.Point(585, 220);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(89, 38);
-            this.btnAgregar.TabIndex = 8;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // pictureBox2
             // 
@@ -158,7 +107,7 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // DatosCitas
+            // DatosCompletados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,12 +116,11 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "DatosCitas";
+            this.Name = "DatosCompletados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SystemCitas | Citas";
             this.Load += new System.EventHandler(this.DatosCitas_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataPacientes)).EndInit();
@@ -184,12 +132,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox txtBuscarDoctor;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnCompletar;
-        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dataPacientes;
         private System.Windows.Forms.PictureBox pictureBox1;
