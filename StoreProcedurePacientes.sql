@@ -41,11 +41,7 @@ create procedure SP_EditarPacientes
 @FechaIngreso datetime
 as
 begin
-Update Pacientes set Nombre = @Nombre, Apellido = @Apellido, Direccion = @Direccion, 
-FechaNacimiento = @FechaNacimiento, 
-NumeroDeTelefono = @NumeroDeTelefono,
-CorreoElectronico = @CorreoElectronico, Cedula = @Cedula, FechaIngreso = @FechaIngreso
-where IdPacientes=@IdPacientes
+Update Pacientes set Nombre = @Nombre, Apellido = @Apellido, Direccion = @Direccion, FechaNacimiento = @FechaNacimiento, NumeroDeTelefono = @NumeroDeTelefono, CorreoElectronico = @CorreoElectronico, Cedula = @Cedula, FechaIngreso = @FechaIngreso where IdPacientes=@IdPacientes
 end
 
 /*Procedure Eliminar Pacientes*/
