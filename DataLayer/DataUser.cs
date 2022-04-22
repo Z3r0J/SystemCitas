@@ -24,8 +24,16 @@ namespace DataLayer
 
             cmd.Parameters.AddWithValue("@UserName",us.UserName);
             cmd.Parameters.AddWithValue("@Password",us.Password);
+            _conexion.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
 
-            return ExecuteProc(cmd);
+            if (reader.HasRows)
+            {
+                _conexion.Close();
+                return true;
+            }
+            _conexion.Close();
+            return false;
 
         }
 
@@ -65,7 +73,6 @@ namespace DataLayer
 
             return dt;
         }
-
 
         public bool AgregarUsuarios(User us) {
             SqlCommand cmd = new SqlCommand("SP_InsertarUsuarios", _conexion) { 

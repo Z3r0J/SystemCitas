@@ -32,13 +32,13 @@ namespace SystemCitas
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbPassword = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.lbUser = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,8 +50,8 @@ namespace SystemCitas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.btnAcceder);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.lbPassword);
@@ -73,29 +73,18 @@ namespace SystemCitas
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCerrar.Location = new System.Drawing.Point(250, 222);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(62, 24);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.Text = "Cancelar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
             // btnAcceder
             // 
             this.btnAcceder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAcceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAcceder.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAcceder.Location = new System.Drawing.Point(178, 222);
+            this.btnAcceder.Location = new System.Drawing.Point(180, 225);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(62, 24);
             this.btnAcceder.TabIndex = 5;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = true;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // textBox1
             // 
@@ -143,6 +132,19 @@ namespace SystemCitas
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(250, 225);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(62, 24);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -172,8 +174,8 @@ namespace SystemCitas
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAcceder;
-        private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

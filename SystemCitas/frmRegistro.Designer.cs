@@ -105,6 +105,7 @@
             this.btnCacelarRegistro.TabIndex = 6;
             this.btnCacelarRegistro.Text = "Cancelar";
             this.btnCacelarRegistro.UseVisualStyleBackColor = true;
+            this.btnCacelarRegistro.Click += new System.EventHandler(this.btnCacelarRegistro_Click);
             // 
             // btnRegistrar
             // 
@@ -117,6 +118,7 @@
             this.btnRegistrar.TabIndex = 5;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // textBox1
             // 
