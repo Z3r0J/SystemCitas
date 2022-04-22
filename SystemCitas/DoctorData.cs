@@ -74,8 +74,11 @@ namespace SystemCitas
             {
                 LlenarData();
             }
-            int IdDoctor = Convert.ToInt32(txtBuscarDoctor.Text);
-            dataDotores.DataSource = doctor.BuscarDoctor(IdDoctor);
+            else
+            {
+                int IdDoctor = Convert.ToInt32(txtBuscarDoctor.Text);
+                dataDotores.DataSource = doctor.BuscarDoctor(IdDoctor);
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -84,20 +87,27 @@ namespace SystemCitas
         }
 
         private void Editando() {
-            RegistroDoctor registro = new RegistroDoctor();
-            registro.Editar = true;
-            registro.Id = Convert.ToInt32(dataDotores.CurrentRow.Cells[0].Value);
-            registro.txtNombreDoctor.Text = dataDotores.CurrentRow.Cells[1].Value.ToString();
-            registro.txtApellidoDoctor.Text = dataDotores.CurrentRow.Cells[2].Value.ToString();
-            registro.txtDireccion.Text = dataDotores.CurrentRow.Cells[3].Value.ToString();
-            registro.dateTimePicker2.Value = (DateTime)dataDotores.CurrentRow.Cells[4].Value;
-            registro.txtTelefono.Text = dataDotores.CurrentRow.Cells[5].Value.ToString();
-            registro.txtCorreo.Text = dataDotores.CurrentRow.Cells[6].Value.ToString();
-            registro.txtCedula.Text = dataDotores.CurrentRow.Cells[7].Value.ToString();
-            this.Hide();
-            registro.ShowDialog();
-            LlenarData();
-            this.Show();
+            if (dataDotores.SelectedRows.Count>0)
+            {
+                RegistroDoctor registro = new RegistroDoctor();
+                registro.Editar = true;
+                registro.Id = Convert.ToInt32(dataDotores.CurrentRow.Cells[0].Value);
+                registro.txtNombreDoctor.Text = dataDotores.CurrentRow.Cells[1].Value.ToString();
+                registro.txtApellidoDoctor.Text = dataDotores.CurrentRow.Cells[2].Value.ToString();
+                registro.txtDireccion.Text = dataDotores.CurrentRow.Cells[3].Value.ToString();
+                registro.dateTimePicker2.Value = (DateTime)dataDotores.CurrentRow.Cells[4].Value;
+                registro.txtTelefono.Text = dataDotores.CurrentRow.Cells[5].Value.ToString();
+                registro.txtCorreo.Text = dataDotores.CurrentRow.Cells[6].Value.ToString();
+                registro.txtCedula.Text = dataDotores.CurrentRow.Cells[7].Value.ToString();
+                this.Hide();
+                registro.ShowDialog();
+                LlenarData();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Doctor");
+            }
         }
 
         private void Agregando() {
@@ -112,6 +122,7 @@ namespace SystemCitas
         {
             Agregando();
         }
+
     }
 
 
