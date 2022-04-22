@@ -33,24 +33,20 @@
             this.lbHora = new System.Windows.Forms.Label();
             this.lbFecha = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.txtCedula = new System.Windows.Forms.MaskedTextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtCedula = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.txtTelefonos = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellidoDoctor = new System.Windows.Forms.TextBox();
             this.txtNombreDoctor = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbCitas = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbDoctor = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -76,7 +72,7 @@
             this.lbHora.BackColor = System.Drawing.Color.White;
             this.lbHora.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbHora.Location = new System.Drawing.Point(27, 493);
+            this.lbHora.Location = new System.Drawing.Point(27, 400);
             this.lbHora.Name = "lbHora";
             this.lbHora.Size = new System.Drawing.Size(37, 17);
             this.lbHora.TabIndex = 14;
@@ -88,7 +84,7 @@
             this.lbFecha.BackColor = System.Drawing.Color.White;
             this.lbFecha.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbFecha.Location = new System.Drawing.Point(100, 493);
+            this.lbFecha.Location = new System.Drawing.Point(100, 400);
             this.lbFecha.Name = "lbFecha";
             this.lbFecha.Size = new System.Drawing.Size(43, 17);
             this.lbFecha.TabIndex = 13;
@@ -97,30 +93,44 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtTelefono);
+            this.panel1.Controls.Add(this.txtCedula);
             this.panel1.Controls.Add(this.txtCorreo);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.txtCedula);
             this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.txtTelefonos);
             this.panel1.Controls.Add(this.txtDireccion);
             this.panel1.Controls.Add(this.txtApellidoDoctor);
             this.panel1.Controls.Add(this.txtNombreDoctor);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.cmbCitas);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.cmbDoctor);
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Location = new System.Drawing.Point(311, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 511);
+            this.panel1.Size = new System.Drawing.Size(394, 413);
             this.panel1.TabIndex = 12;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTelefono.Location = new System.Drawing.Point(160, 214);
+            this.txtTelefono.Mask = "(999) 000-0000";
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(212, 23);
+            this.txtTelefono.TabIndex = 24;
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCedula.Location = new System.Drawing.Point(160, 167);
+            this.txtCedula.Mask = "000-0000000-0";
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(212, 23);
+            this.txtCedula.TabIndex = 23;
             // 
             // txtCorreo
             // 
@@ -150,28 +160,12 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Cédula:";
             // 
-            // txtCedula
-            // 
-            this.txtCedula.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCedula.Location = new System.Drawing.Point(160, 167);
-            this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(212, 23);
-            this.txtCedula.TabIndex = 4;
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(160, 313);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(212, 23);
             this.dateTimePicker2.TabIndex = 7;
-            // 
-            // txtTelefonos
-            // 
-            this.txtTelefonos.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTelefonos.Location = new System.Drawing.Point(160, 214);
-            this.txtTelefonos.Name = "txtTelefonos";
-            this.txtTelefonos.Size = new System.Drawing.Size(212, 23);
-            this.txtTelefonos.TabIndex = 5;
             // 
             // txtDireccion
             // 
@@ -207,26 +201,6 @@
             this.label9.TabIndex = 16;
             this.label9.Text = "Correo Electronico:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(15, 416);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 17);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Cita:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(15, 369);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Pacientes:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -257,15 +231,6 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Apellidos:";
             // 
-            // cmbCitas
-            // 
-            this.cmbCitas.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cmbCitas.FormattingEnabled = true;
-            this.cmbCitas.Location = new System.Drawing.Point(160, 410);
-            this.cmbCitas.Name = "cmbCitas";
-            this.cmbCitas.Size = new System.Drawing.Size(212, 23);
-            this.cmbCitas.TabIndex = 9;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -276,36 +241,29 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Nombres:";
             // 
-            // cmbDoctor
-            // 
-            this.cmbDoctor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cmbDoctor.FormattingEnabled = true;
-            this.cmbDoctor.Location = new System.Drawing.Point(160, 363);
-            this.cmbDoctor.Name = "cmbDoctor";
-            this.cmbDoctor.Size = new System.Drawing.Size(212, 23);
-            this.cmbDoctor.TabIndex = 8;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregar.Location = new System.Drawing.Point(233, 470);
+            this.btnAgregar.Location = new System.Drawing.Point(233, 356);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(70, 28);
             this.btnAgregar.TabIndex = 21;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(309, 470);
+            this.btnCancelar.Location = new System.Drawing.Point(309, 356);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(63, 28);
             this.btnCancelar.TabIndex = 22;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // pictureBox1
             // 
@@ -313,7 +271,7 @@
             this.pictureBox1.Image = global::SystemCitas.Properties.Resources.medical_59_icon_icons_com_73933;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(293, 511);
+            this.pictureBox1.Size = new System.Drawing.Size(293, 413);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -323,7 +281,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(728, 534);
+            this.ClientSize = new System.Drawing.Size(728, 435);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbHora);
@@ -350,26 +308,22 @@
         private System.Windows.Forms.Label lbHora;
         private System.Windows.Forms.Label lbFecha;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox txtTelefonos;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtApellidoDoctor;
-        private System.Windows.Forms.TextBox txtNombreDoctor;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmbCitas;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbDoctor;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.DateTimePicker dateTimePicker2;
+        public System.Windows.Forms.TextBox txtDireccion;
+        public System.Windows.Forms.TextBox txtApellidoDoctor;
+        public System.Windows.Forms.TextBox txtNombreDoctor;
+        public System.Windows.Forms.MaskedTextBox txtTelefono;
+        public System.Windows.Forms.MaskedTextBox txtCedula;
+        public System.Windows.Forms.TextBox txtCorreo;
     }
 }

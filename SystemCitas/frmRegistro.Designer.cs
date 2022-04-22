@@ -105,6 +105,7 @@
             this.btnCacelarRegistro.TabIndex = 6;
             this.btnCacelarRegistro.Text = "Cancelar";
             this.btnCacelarRegistro.UseVisualStyleBackColor = true;
+            this.btnCacelarRegistro.Click += new System.EventHandler(this.btnCacelarRegistro_Click);
             // 
             // btnRegistrar
             // 
@@ -117,6 +118,7 @@
             this.btnRegistrar.TabIndex = 5;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // textBox1
             // 
@@ -190,12 +192,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnCacelarRegistro;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label lbUser;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtUserName;
+        public System.Windows.Forms.TextBox textBox2;
     }
 }

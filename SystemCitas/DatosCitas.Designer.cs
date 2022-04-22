@@ -73,6 +73,7 @@
             this.btnBuscar.TabIndex = 15;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // pictureBox3
             // 
@@ -114,6 +115,7 @@
             this.btnCompletar.TabIndex = 9;
             this.btnCompletar.Text = "Completar Citas";
             this.btnCompletar.UseVisualStyleBackColor = true;
+            this.btnCompletar.Click += new System.EventHandler(this.btnCompletar_Click);
             // 
             // btnAgregar
             // 
@@ -168,6 +170,7 @@
             this.Name = "DatosCitas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SystemCitas | Citas";
+            this.Load += new System.EventHandler(this.DatosCitas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
