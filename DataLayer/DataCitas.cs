@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    class DataCitas
+    public class DataCitas
     {
+        public DataCitas()
+        {
+                
+        }
     }
 }

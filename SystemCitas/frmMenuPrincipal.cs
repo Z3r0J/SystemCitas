@@ -28,5 +28,28 @@ namespace SystemCitas
             DoctorData frm = new DoctorData();
             frm.Show();
         }
+
+        private void btnUusuarios_Click(object sender, EventArgs e)
+        {
+            DatosUsuarios usuarios = new DatosUsuarios();
+            usuarios.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataPaciente paciente = new DataPaciente();
+            paciente.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DatosCitas citas = new DatosCitas();
+            citas.Show();
+        }
     }
 }
