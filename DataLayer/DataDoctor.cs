@@ -81,13 +81,13 @@ namespace DataLayer
             return ExecuteProc(cmd);
         }
 
-        public bool EliminarDoctor(Models.Doctor doc)
+        public bool EliminarDoctor(int IdDoctor)
         {
             SqlCommand cmd = new SqlCommand("SP_EliminarDoctor", _conexion)
             {
                 CommandType = CommandType.StoredProcedure
             };
-            cmd.Parameters.AddWithValue("@IdDoctor", doc.IdDoctor);
+            cmd.Parameters.AddWithValue("@IdDoctor", IdDoctor);
 
             return ExecuteProc(cmd);
         }

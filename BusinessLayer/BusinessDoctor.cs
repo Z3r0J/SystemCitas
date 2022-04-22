@@ -30,8 +30,8 @@ namespace BusinessLayer
             return dataDoctor.EditarDoctor(doctor);
         }
 
-        public bool EliminandoDoctor(DataLayer.Models.Doctor doctor) {
-            return dataDoctor.EliminarDoctor(doctor);
+        public bool EliminandoDoctor(int IdDoctor) {
+            return dataDoctor.EliminarDoctor(IdDoctor);
         }
     }
 }

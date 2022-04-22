@@ -22,5 +22,11 @@ namespace SystemCitas
             lbFecha.Text = DateTime.Now.ToLongDateString();
             lbEstado.Text = "Conectado | " + DateTime.Now.ToShortTimeString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DoctorData frm = new DoctorData();
+            frm.Show();
+        }
     }
 }
