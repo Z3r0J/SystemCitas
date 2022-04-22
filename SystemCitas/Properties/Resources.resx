@@ -118,31 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="doctor_icon-icons.com_76230" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\doctor_icon-icons.com_76230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medical-59_icon-icons.com_73933" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medical-59_icon-icons.com_73933.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doctor_128_44166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctor_128_44166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hospital_health_clinic_building_medical_health_icon_140666" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hospital_health_clinic_building_medical_health_icon_140666.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Doctor_Female_icon-icons.com_75050" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Doctor_Female_icon-icons.com_75050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="medical-59_icon-icons.com_73933" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medical-59_icon-icons.com_73933.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="medical-49_icon-icons.com_73913" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medical-49_icon-icons.com_73913.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medical-14_icon-icons.com_73923" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medical-14_icon-icons.com_73923.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="medical-42_icon-icons.com_73897" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medical-42_icon-icons.com_73897.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cold_high_sick_fever_temperature_icon_140213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cold_high_sick_fever_temperature_icon_140213.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fever_icon_140486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fever_icon_140486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doctor_Female_icon-icons.com_75050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doctor_Female_icon-icons.com_75050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doctor_icon-icons.com_76230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctor_icon-icons.com_76230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crowd_patient_patients_icon_140474" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crowd_patient_patients_icon_140474.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medicine_icon-icons.com_54386" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medicine_icon-icons.com_54386.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="male-user-add_25347" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\male-user-add_25347.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medical-14_icon-icons.com_73923" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medical-14_icon-icons.com_73923.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medical-49_icon-icons.com_73913" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medical-49_icon-icons.com_73913.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="doctor_128_44166" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\doctor_128_44166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hospital_health_clinic_building_medical_health_icon_1406661" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hospital_health_clinic_building_medical_health_icon_1406661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
