@@ -63,6 +63,36 @@ namespace SystemCitas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doctor_128_44166 {
+            get {
+                object obj = ResourceManager.GetObject("doctor_128_44166", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Doctor_Female_icon_icons_com_75050 {
+            get {
+                object obj = ResourceManager.GetObject("Doctor_Female_icon-icons.com_75050", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doctor_icon_icons_com_76230 {
+            get {
+                object obj = ResourceManager.GetObject("doctor_icon-icons.com_76230", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hospital_health_clinic_building_medical_health_icon_140666 {
             get {
                 object obj = ResourceManager.GetObject("hospital_health_clinic_building_medical_health_icon_140666", resourceCulture);

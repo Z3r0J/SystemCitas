@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace SystemCitas
 {
-    public partial class RegistroCitas : Form
+    public partial class DoctorData : Form
     {
-        public RegistroCitas()
+        public DoctorData()
         {
             InitializeComponent();
-        }
-
-        private void RegistroCitas_Load(object sender, EventArgs e)
-        {
-            lbFecha.Text = DateTime.Now.ToLongDateString();
-            lbHora.Text = DateTime.Now.ToShortTimeString()+ " |";
-           
         }
     }
 }
