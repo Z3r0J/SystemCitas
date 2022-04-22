@@ -36,7 +36,6 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dataPacientes = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,7 +55,6 @@
             this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
-            this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.dataPacientes);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -99,7 +97,7 @@
             // 
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCerrar.Location = new System.Drawing.Point(585, 450);
+            this.btnCerrar.Location = new System.Drawing.Point(585, 342);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(89, 28);
             this.btnCerrar.TabIndex = 11;
@@ -110,7 +108,7 @@
             // 
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminar.Location = new System.Drawing.Point(585, 373);
+            this.btnEliminar.Location = new System.Drawing.Point(585, 265);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(89, 28);
             this.btnEliminar.TabIndex = 10;
@@ -121,23 +119,12 @@
             // 
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEditar.Location = new System.Drawing.Point(585, 290);
+            this.btnEditar.Location = new System.Drawing.Point(585, 182);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(89, 28);
             this.btnEditar.TabIndex = 9;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregar.Location = new System.Drawing.Point(585, 206);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(89, 28);
-            this.btnAgregar.TabIndex = 8;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -200,7 +187,6 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dataPacientes;
         private System.Windows.Forms.PictureBox pictureBox1;
