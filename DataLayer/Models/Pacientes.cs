@@ -15,6 +15,7 @@ namespace DataLayer.Models
         public DateTime FechaNacimiento { get; set; }
         public string NumeroDeTelefono { get; set; }
         public string Cedula { get; set; }
+        public string CorreoElectronico { get; set; }
         public DateTime FechaIngreso { get; set; }
     }
 }
