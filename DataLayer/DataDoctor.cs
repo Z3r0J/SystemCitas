@@ -28,6 +28,26 @@ namespace DataLayer
 
             return dt;
         }
+
+        public DataTable BuscarDoctor(int IdDoctor)
+        {
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand("SP_BuscarDoctor", _conexion)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            cmd.Parameters.AddWithValue("@BUSCAR",IdDoctor);
+            _conexion.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            dt.Load(reader);
+            reader.Close();
+
+            _conexion.Close();
+
+            return dt;
+        }
+
         public bool AgregarDoctor(Models.Doctor doc) {
             SqlCommand cmd = new SqlCommand("SP_InsertarDoctor", _conexion) {
                 CommandType = CommandType.StoredProcedure
@@ -57,6 +77,17 @@ namespace DataLayer
             cmd.Parameters.AddWithValue("@NumeroDeTelefono", doc.NumeroDeTelefono);
             cmd.Parameters.AddWithValue("@CorreoElectronico", doc.CorreoElectronico);
             cmd.Parameters.AddWithValue("@Cedula", doc.Cedula);
+
+            return ExecuteProc(cmd);
+        }
+
+        public bool EliminarDoctor(Models.Doctor doc)
+        {
+            SqlCommand cmd = new SqlCommand("SP_EliminarDoctor", _conexion)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            cmd.Parameters.AddWithValue("@IdDoctor", doc.IdDoctor);
 
             return ExecuteProc(cmd);
         }
